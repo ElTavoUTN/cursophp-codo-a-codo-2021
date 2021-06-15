@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript U2 - Gustavo Lemos</title>
+</head>
+
+<body>
+
+    <table class="table table-responsive table-bordered table-hover table-striped ali">
+        <thead>
+            <tr>
+                <th colspan="4" class="notas" id="nombre_alumno"></th>
+            </tr>
+        </thead>
+        <tbody class="notas">
+            <tr>
+                <th></th>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+                <th>Nota 3</th>
+            </tr>
+            <tr>
+                <th></th>
+                <td id="nota_1"></td>
+                <td id="nota_2"></td>
+                <td id="nota_3"></td>
+            </tr>
+            <tr>
+                <th class="col-1" scope="row" style="height: 8px;">Promedio</th>
+                <td class="fw-bold" colspan="3" id="promedio"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="container-fluid w-100 fixed-bottom p-3 bg-secondary bg-gradient">
+        <div class="mx-auto text-light" style="text-align: center">
+            Javascript U2 - Gustavo Lemos
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="script.js"></script>

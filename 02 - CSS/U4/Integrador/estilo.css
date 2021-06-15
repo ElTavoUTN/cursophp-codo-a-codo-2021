@@ -1,0 +1,238 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  background-image: url(img/header.jpg);
+  height: 150vh;
+  background-size: cover;
+}
+.sitio-contenedor {
+  display: block;
+}
+.sitio-logo-contenedor {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+  align-items: center;
+  position: fixed;
+  padding-left: 40px;
+  background-color: rgb(34, 58, 111);
+}
+
+.navbar {
+  padding-right: 40px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding-left: 30px;
+  font-size: 100%;
+}
+
+.box-lower {
+  position: absolute;
+  color: white;
+  top: 120%;
+  width: 50%;
+  height: 40%;
+  margin: 2rem;
+  font-weight: 600;
+  font-size: xx-large;
+}
+
+h2 {
+  text-align: center;
+  font-size: 35px;
+  padding: 40px;
+  color: grey;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-first {
+  width: 400px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card {
+  width: 400px;
+  padding: 20px;
+}
+
+h3 {
+  font-size: 25px;
+  padding-bottom: 10px;
+  color: rgb(55, 55, 55);
+}
+
+.propiedad {
+  width: 400px;
+  height: 400px;
+  margin: 0px;
+}
+
+.card-text {
+  padding-bottom: 10px;
+}
+
+.precio {
+  color: rgb(17, 116, 4);
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.box-lower {
+  justify-content: space-around;
+}
+
+.naranja {
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border: 0px;
+  padding: 15px;
+  width: 350px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.naranja:hover,
+.naranja:focus {
+  background-color: rgb(208, 139, 11);
+}
+
+.naranja:active {
+  background-color: rgb(85, 55, 0);
+}
+
+.container-background {
+  border: 0.2px;
+  border-style: solid;
+  background-color: rgb(235, 229, 229);
+}
+
+.card-lower {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-all {
+  text-align: right;
+  margin-top: 40px;
+  margin-right: 74px;
+  margin-bottom: 20px;
+}
+
+.btn-success {
+  background-color: rgb(0, 194, 0);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: 0px;
+  padding: 10px;
+  width: 200px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+  background-color: rgb(0, 138, 0);
+}
+
+.btn-success:active {
+  background-color: rgb(0, 61, 0);
+}
+
+.hover:hover {
+  color: rgb(238, 132, 11) !important;
+  background-color: rgba(247, 241, 241, 0.212);
+}
+
+.hover2:hover {
+  color: rgb(238, 132, 11) !important;
+}
+
+.container-contactanos {
+  background-image: url(img/encuentra.jpg);
+  height: 400px;
+  background-size: cover;
+}
+
+h4 {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  padding-left: 150px;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+
+.text-contacto {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding-left: 150px;
+}
+
+.btn-contacto {
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border: 0px;
+  padding: 15px;
+  width: 250px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+  margin-left: 150px;
+  margin-top: 70px;
+}
+
+.btn-contacto:hover,
+.btn-contacto:focus {
+  background-color: rgb(208, 139, 11);
+}
+
+.btn-contacto:active {
+  background-color: rgb(85, 55, 0);
+}
+
+.img-footer {
+  background-color: rgb(68, 66, 66);
+}
+
+.img-contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-footer {
+  color: white;
+  font-size: 15px;
+  margin: 20px;
+}
+
+.navbar-foot {
+  padding-right: 40px;
+}

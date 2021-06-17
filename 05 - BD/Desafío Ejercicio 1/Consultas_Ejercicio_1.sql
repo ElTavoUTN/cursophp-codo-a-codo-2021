@@ -49,9 +49,19 @@ ORDER BY departamento.presupuesto asc;
 INSERT INTO departamento (`id`, `numero_departamento`, `nombre_departamento`, `presupuesto`) VALUES ('11', '11', 'Calidad', '40000');
 INSERT INTO persona (`id`, `dni`, `nombre`, `apellidos`,`departamento_id`) VALUES ('15', '89267109', 'Esther', 'Vazquez','11');
 -- 2.13 Aplicar un recorte presupuestario del 10% a todos los departamentos.
-select departamento.nombre_departamento, round(departamento.presupuesto - departamento.presupuesto * 0.1) as descuento from departamento;
+select departamento.nombre_departamento, round(departamento.presupuesto - departamento.presupuesto * 0.1) as descuento from departamento where departamento.presupuesto;
 UPDATE departamento SET departamento.presupuesto = round(departamento.presupuesto - departamento.presupuesto * 0.1);
 select * from departamento;
--- 2.14 Reasignar a los empleados del departamento de investigación (código 77) al departamento de  informática (código 14) 
--- 2.15 Despedir a los empleados del departamento de informática (código 14) 
--- 2.16 Despedir a los empleados que trabajen en departamentos con un presupuesto superior a 90000
+-- 2.14 Reasignar a los empleados del departamento de investigación (código 77) al departamento de  informática (código 14)
+update persona set persona.departamento_id = 14 where persona.departamento_id = 77;
+-- 2.15 Despedir a los empleados del departamento de informática (código 14).
+update persona set persona.departamento_id = 1 where persona.departamento_id = 14; 
+-- Se puede hacer el delete, pero es necesario preservar los datos en la BD
+delete from persona where persona.departamento_id = 14;
+-- 2.16 Despedir a los empleados que trabajen en departamentos con un presupuesto superior a 90000.
+update persona join departamento on departamento.id = persona.departamento_id 
+set persona.departamento_id = 1
+where departamento.presupuesto > 90000; 
+-- Se puede hacer el delete, pero es necesario preservar los datos en la BD
+delete p from persona p join departamento d on d.id = p.departamento_id  
+where d.presupuesto > 90000;
